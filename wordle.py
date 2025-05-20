@@ -8,7 +8,7 @@ from tkinter.font import Font
 
 root=Tk()
 root.title("Wordle")
-root.iconbitmap(r'C:\Users\Tharu\Downloads\iconimage.png')
+root.iconbitmap(r'images\iconimage.ico')
 window_width = 760
 window_height = 717
 screen_width = root.winfo_screenwidth()
@@ -26,7 +26,7 @@ cnt = 0
 def play():
     play = Toplevel()
     play.title("Wordle")
-    play.iconbitmap(r"C:\Users\Tharu\Downloads\iconimage.png")
+    play.iconbitmap(r"images\iconimage.ico")
     window_width = 800
     window_height = 717
     screen_width = play.winfo_screenwidth()
@@ -36,7 +36,7 @@ def play():
     play.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
     exitbutton = Button(play, text = "PLAY", bg = "#6baa64" , fg = "white", relief = "solid", borderwidth = 1, activebackground = "#6baa64", activeforeground = "white", font= ('Helvetica 30 bold'), command = play.destroy)
     exitbutton.place(relx=.5, rely=0.8,anchor= CENTER)
-    my_img1 = ImageTk.PhotoImage(Image.open("C:/Users/Tharu/Downloads/WordleTitleScreen.png"))
+    my_img1 = ImageTk.PhotoImage(Image.open("images\WordleTitleScreen.png"))
     my_label = Label(play, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
@@ -54,8 +54,8 @@ def notwordprompt():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"C:\Users\Tharu\Downloads\iconimage.png")
-    my_img1 = ImageTk.PhotoImage(Image.open("C:/Users/Tharu/Downloads/wordleincorrect.png"))
+    top.iconbitmap(r"images\iconimage.ico")
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
@@ -74,8 +74,8 @@ def congratulations():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"C:\Users\Tharu\Downloads\iconimage.png")
-    my_img1 = ImageTk.PhotoImage(Image.open("C:/Users/Tharu/Downloads/wordletrophy.png"))
+    top.iconbitmap(r"images\iconimage.ico")
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wordletrophy.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.3, anchor=CENTER)
     my_label.image = my_img1
@@ -95,8 +95,8 @@ def loser():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"C:\Users\Tharu\Downloads\iconimage.png")
-    my_img1 = ImageTk.PhotoImage(Image.open("C:/Users/Tharu/Downloads/wordleincorrect.png"))
+    top.iconbitmap(r"images\iconimage.ico")
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.3, anchor=CENTER)
     my_label.image = my_img1
@@ -115,8 +115,8 @@ def notwordlength():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"C:\Users\Tharu\Downloads\iconimage.png")
-    my_img1 = ImageTk.PhotoImage(Image.open("C:/Users/Tharu/Downloads/wordleincorrect.png"))
+    top.iconbitmap(r"images\iconimage.ico")
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
