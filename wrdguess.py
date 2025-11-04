@@ -8,7 +8,7 @@ from tkinter.font import Font
 
 root=Tk()
 root.title("WrdGuess")
-root.iconbitmap(r'images\iconimage.ico')
+root.iconbitmap(r'images\WrdGuessIcon.ico')
 window_width = 760
 window_height = 717
 screen_width = root.winfo_screenwidth()
@@ -26,7 +26,7 @@ cnt = 0
 def play():
     play = Toplevel()
     play.title("WrdGuess")
-    play.iconbitmap(r"images\iconimage.ico")
+    play.iconbitmap(r"images\WrdGuessIcon.ico")
     window_width = 800
     window_height = 717
     screen_width = play.winfo_screenwidth()
@@ -65,7 +65,7 @@ def notwordprompt():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"images\iconimage.ico")
+    top.iconbitmap(r"images\WrdGuessIcon.ico")
     my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
@@ -85,7 +85,7 @@ def congratulations():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"images\iconimage.ico")
+    top.iconbitmap(r"images\WrdGuessIcon.ico")
     my_img1 = ImageTk.PhotoImage(Image.open("images\wordletrophy.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.3, anchor=CENTER)
@@ -106,7 +106,7 @@ def loser():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"images\iconimage.ico")
+    top.iconbitmap(r"images\WrdGuessIcon.ico")
     my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.3, anchor=CENTER)
@@ -126,7 +126,7 @@ def notwordlength():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    top.iconbitmap(r"images\iconimage.ico")
+    top.iconbitmap(r"images\WrdGuessIcon.ico")
     my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
