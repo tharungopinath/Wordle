@@ -1,6 +1,6 @@
-# 🟩 Wordle (Tkinter GUI Version)
+# 🟩 WrdGuess (Tkinter GUI Version)
 
-This is a graphical recreation of the popular Wordle game, built using Python and the Tkinter GUI library. Instead of typing in a terminal, players interact with an easy-to-use graphical interface featuring color-coded tiles, feedback messages, and a visual on-screen keyboard.
+This is a graphical recreation of the popular game "Wordle", built using Python and the Tkinter GUI library. Instead of typing in a terminal, players interact with an easy-to-use graphical interface featuring color-coded tiles, feedback messages, and a visual on-screen keyboard.
 
 ## 🧠 Gameplay Overview
 
@@ -31,7 +31,7 @@ The game ends when you either guess the word or run out of attempts.
 > ⚠️ Note: The on-screen keyboard is **not clickable**—it acts purely as a visual aid showing the status of letters used.
 
 
-All assets (`wordledictionary.txt` and the `images/` folder) must be placed in the same directory as `wordle.py` for the game to function properly.
+All assets (`wrdguessdictionary.txt` and the `images/` folder) must be placed in the same directory as `wrdguess.py` for the game to function properly.
 
 ## 🛠 Requirements
 
@@ -48,12 +48,12 @@ pip install Pillow
 ## 🚀 Running the Game
 
 1. Make sure you have these files in the **same folder**:
-   - `wordle.py`
-   - `wordledictionary.txt`
+   - `wrdguess.py`
+   - `wrdguessdictionary.txt`
    - `images/` folder with:
-     - `WordleTitleScreen.png`
-     - `wordletrophy.png`
-     - `wordleincorrect.png`
+     - `WrdGuessTitleScreen.png`
+     - `wrdguesstrophy.png`
+     - `wrdguessincorrect.png`
      - `iconimage.ico`
 
 2. Open a terminal or command prompt in that folder.
@@ -61,7 +61,7 @@ pip install Pillow
 3. Run the game using:
 
 ```bash
-python wordle.py
+python wrdguess.py
 ```
 4. The game window will launch. Type your 5-letter guesses into the entry box and click **Enter**.
 
