@@ -135,7 +135,7 @@ def notwordlength():
     lbl.place(relx=0.5, rely=0.9, anchor=CENTER)
 
 def generateword():
-    with open('wordledictionary.txt') as file:
+    with open('wrdguessdictionary.txt') as file:
         lines = file.readlines()
         word = lines[random.randrange(0, len(lines))]
     return word
@@ -182,7 +182,7 @@ def submit(event = None):
         entry.delete(0, END)
         notwordlength()
     else:
-        with open('wordledictionary.txt') as file:
+        with open('wrdguessdictionary.txt') as file:
             lines = file.readlines()
             for i in range(len(lines)):
                 if guess == lines[i]:
