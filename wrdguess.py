@@ -7,7 +7,7 @@ import random
 from tkinter.font import Font
 
 root=Tk()
-root.title("Wordle")
+root.title("WrdGuess")
 root.iconbitmap(r'images\iconimage.ico')
 window_width = 760
 window_height = 717
@@ -25,7 +25,7 @@ cnt = 0
    
 def play():
     play = Toplevel()
-    play.title("Wordle")
+    play.title("WrdGuess")
     play.iconbitmap(r"images\iconimage.ico")
     window_width = 800
     window_height = 717
@@ -56,7 +56,7 @@ play()
 
 def notwordprompt():
     top = Toplevel()
-    top.title("Wordle")
+    top.title("WrdGuess")
     top.geometry("100x90")
     window_width = 500
     window_height = 350
