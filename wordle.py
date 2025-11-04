@@ -165,7 +165,7 @@ def dupCheck():
 
 dupCheck()
    
-def submit():
+def submit(event = None):
     global cnt
     global goal
     global buttons
@@ -241,6 +241,7 @@ def submit():
             submit.config(state = DISABLED)
            
 #user interface
+entry.bind("<Return>", submit)
 buttons = [[0 for i in range(5)] for j in range(6)]
 button = [[0 for i in range(5)] for j in range(6)]
 for x in range(6):
