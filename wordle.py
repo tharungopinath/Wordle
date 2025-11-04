@@ -17,12 +17,12 @@ xcord = (screen_width / 2) - (window_width / 2)
 ycord = (screen_height / 2) - (window_height / 2)
 root.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
 root.config(bg = "white")
+root.withdraw()
 
 entry = Entry(root, width = 35, borderwidth=1, relief = "solid", bg = "#d3d3d3")
 entry.grid(row=6, column=2, columnspan=3, ipady = 17, padx=5, pady=8, ipadx = 4)
 cnt = 0
    
-
 def play():
     play = Toplevel()
     play.title("Wordle")
@@ -34,7 +34,18 @@ def play():
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
     play.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
-    exitbutton = Button(play, text = "PLAY", bg = "#6baa64" , fg = "white", relief = "solid", borderwidth = 1, activebackground = "#6baa64", activeforeground = "white", font= ('Helvetica 30 bold'), command = play.destroy)
+    def start_game():
+        root.deiconify()    
+        play_win.destroy()   
+    exitbutton = Button(
+        play_win,
+        text="PLAY",
+        bg="#6baa64", fg="white",
+        relief="solid", borderwidth=1,
+        activebackground="#6baa64", activeforeground="white",
+        font=('Helvetica 30 bold'),
+        command=start_game 
+    )
     exitbutton.place(relx=.5, rely=0.8,anchor= CENTER)
     my_img1 = ImageTk.PhotoImage(Image.open("images\WordleTitleScreen.png"))
     my_label = Label(play, image=my_img1)
