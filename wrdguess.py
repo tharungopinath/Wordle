@@ -24,16 +24,16 @@ entry.grid(row=6, column=2, columnspan=3, ipady = 17, padx=5, pady=8, ipadx = 4)
 cnt = 0
    
 def play():
-    play = Toplevel()
-    play.title("WrdGuess")
-    play.iconbitmap(r"images\WrdGuessIcon.ico")
+    play_win = Toplevel()
+    play_win.title("WrdGuess")
+    play_win.iconbitmap(r"images\WrdGuessIcon.ico")
     window_width = 800
     window_height = 717
-    screen_width = play.winfo_screenwidth()
-    screen_height = play.winfo_screenheight()
+    screen_width = play_win.winfo_screenwidth()
+    screen_height = play_win.winfo_screenheight()
     xcord = (screen_width / 2) - (window_width / 2)
     ycord = (screen_height / 2) - (window_height / 2)
-    play.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
+    play_win.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
     def start_game():
         root.deiconify()    
         play_win.destroy()   
@@ -48,7 +48,7 @@ def play():
     )
     exitbutton.place(relx=.5, rely=0.8,anchor= CENTER)
     my_img1 = ImageTk.PhotoImage(Image.open("images\WrdGuessTitleScreen.png"))
-    my_label = Label(play, image=my_img1)
+    my_label = Label(play_win, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
 
