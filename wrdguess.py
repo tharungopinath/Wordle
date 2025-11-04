@@ -66,7 +66,7 @@ def notwordprompt():
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
     top.iconbitmap(r"images\WrdGuessIcon.ico")
-    my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wrdguessincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
@@ -86,7 +86,7 @@ def congratulations():
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
     top.iconbitmap(r"images\WrdGuessIcon.ico")
-    my_img1 = ImageTk.PhotoImage(Image.open("images\wordletrophy.png"))
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wrdguesstrophy.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.3, anchor=CENTER)
     my_label.image = my_img1
@@ -107,7 +107,7 @@ def loser():
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
     top.iconbitmap(r"images\WrdGuessIcon.ico")
-    my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wrdguessincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.3, anchor=CENTER)
     my_label.image = my_img1
@@ -127,7 +127,7 @@ def notwordlength():
     ycord = (screen_height / 2) - (window_height / 2)
     top.geometry(f'{window_width}x{window_height}+{int(xcord)}+{int(ycord)}')
     top.iconbitmap(r"images\WrdGuessIcon.ico")
-    my_img1 = ImageTk.PhotoImage(Image.open("images\wordleincorrect.png"))
+    my_img1 = ImageTk.PhotoImage(Image.open("images\wrdguessincorrect.png"))
     my_label = Label(top, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
