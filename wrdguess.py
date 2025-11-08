@@ -47,7 +47,7 @@ def play():
         command=start_game 
     )
     exitbutton.place(relx=.5, rely=0.8,anchor= CENTER)
-    my_img1 = ImageTk.PhotoImage(Image.open("images\WrdGuessTitleScreen.png"))
+    my_img1 = ImageTk.PhotoImage(Image.open("images\\WrdGuessTitleScreen.png"))
     my_label = Label(play_win, image=my_img1)
     my_label.place(relx=0.5, rely=0.4, anchor=CENTER)
     my_label.image = my_img1
